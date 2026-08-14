@@ -37,13 +37,45 @@ I am developing strong full-stack and mobile engineering foundations while progr
 
 ## Languages & Toolkit
 
-| Category | Technologies |
-| --- | --- |
-| **Languages** | `TypeScript` · `JavaScript` · `SQL` |
-| **Frontend** | `React` · `React Native` · `Next.js` · `Tailwind CSS` |
-| **Backend** | `Node.js` · `NextAuth` · `Prisma` |
-| **Databases** | `PostgreSQL` · `SQL Server` |
-| **Tools** | `Git` · `GitHub Actions` · `Automation` |
+### Languages
+
+<p>
+  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-0B1220?style=for-the-badge&logo=typescript&logoColor=3178C6">
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-0B1220?style=for-the-badge&logo=javascript&logoColor=F7DF1E">
+  <img alt="SQL" src="https://img.shields.io/badge/SQL-0B1220?style=for-the-badge&logo=databricks&logoColor=FF3621">
+</p>
+
+### Frontend
+
+<p>
+  <img alt="React" src="https://img.shields.io/badge/React-0B1220?style=for-the-badge&logo=react&logoColor=61DAFB">
+  <img alt="React Native" src="https://img.shields.io/badge/React_Native-0B1220?style=for-the-badge&logo=react&logoColor=00D8FF">
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-0B1220?style=for-the-badge&logo=next.js&logoColor=FFFFFF">
+  <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-0B1220?style=for-the-badge&logo=tailwindcss&logoColor=06B6D4">
+</p>
+
+### Backend
+
+<p>
+  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-0B1220?style=for-the-badge&logo=node.js&logoColor=5FA04E">
+  <img alt="NextAuth" src="https://img.shields.io/badge/NextAuth-0B1220?style=for-the-badge&logo=auth0&logoColor=EB5424">
+  <img alt="Prisma" src="https://img.shields.io/badge/Prisma-0B1220?style=for-the-badge&logo=prisma&logoColor=2D3748">
+</p>
+
+### Databases
+
+<p>
+  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-0B1220?style=for-the-badge&logo=postgresql&logoColor=4169E1">
+  <img alt="SQL Server" src="https://img.shields.io/badge/SQL_Server-0B1220?style=for-the-badge&logo=microsoftsqlserver&logoColor=CC2927">
+</p>
+
+### Tools
+
+<p>
+  <img alt="Git" src="https://img.shields.io/badge/Git-0B1220?style=for-the-badge&logo=git&logoColor=F05032">
+  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-0B1220?style=for-the-badge&logo=githubactions&logoColor=2088FF">
+  <img alt="Automation" src="https://img.shields.io/badge/Automation-0B1220?style=for-the-badge&logo=n8n&logoColor=EA4B71">
+</p>
 
 <p align="center">
   <picture>
