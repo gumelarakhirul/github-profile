@@ -19,11 +19,11 @@ function assertText(value, label, maximum) {
   assert(value.length <= maximum, `${label} must be ${maximum} characters or fewer.`);
 }
 
-function assertUrl(value, label, { allowEmpty = false } = {}) {
+function assertUrl(value, label, { allowEmpty = false, protocols = ["http:", "https:"] } = {}) {
   if (allowEmpty && value === "") return;
   try {
     const url = new URL(value);
-    assert(["http:", "https:"].includes(url.protocol), `${label} must use http or https.`);
+    assert(protocols.includes(url.protocol), `${label} uses an unsupported URL protocol.`);
   } catch {
     throw new Error(`Invalid profile.config.json: ${label} must be a valid URL.`);
   }
@@ -54,7 +54,7 @@ export function validateConfig(config) {
     assertText(item?.description, `focus[${index}].description`, 180);
   });
 
-  assert(Array.isArray(config.projects) && config.projects.length >= 1 && config.projects.length <= 6, "projects must contain 1 to 6 items.");
+  assert(Array.isArray(config.projects) && config.projects.length <= 6, "projects must contain 0 to 6 items.");
   config.projects.forEach((project, index) => {
     assertText(project?.name, `projects[${index}].name`, 18);
     assertUrl(project?.url, `projects[${index}].url`);
@@ -71,7 +71,7 @@ export function validateConfig(config) {
   config.links.forEach((link, index) => {
     assertText(link?.label, `links[${index}].label`, 14);
     assertText(link?.value, `links[${index}].value`, 28);
-    assertUrl(link?.url, `links[${index}].url`);
+    assertUrl(link?.url, `links[${index}].url`, { protocols: ["http:", "https:", "mailto:"] });
     assert(typeof link?.logo === "string" && link.logo.length <= 30, `links[${index}].logo must be 30 characters or fewer.`);
     assert(/^[A-Fa-f0-9]{6}$/.test(link?.color), `links[${index}].color must be a six-character hex value without #.`);
   });

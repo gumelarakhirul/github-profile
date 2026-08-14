@@ -61,17 +61,18 @@ function buildProfileLines(config) {
     { type: "row", key: "Base", value: config.profile.location },
     { type: "row", key: "Status", value: config.profile.status },
     { type: "blank" },
-    { type: "section", value: "RESEARCH.NODE" },
+    { type: "section", value: "AI.ROADMAP" },
     { type: "row", key: "Primary", value: config.research.primary },
     { type: "row", key: "Direction", value: config.research.direction },
-    { type: "row", key: "Themes", value: config.research.themes },
-    { type: "blank" },
-    { type: "section", value: "BUILD.LOG" }
+    { type: "row", key: "Themes", value: config.research.themes }
   ];
 
-  config.projects.slice(0, 4).forEach((project) => {
-    lines.push({ type: "row", key: project.name, value: project.heroLabel });
-  });
+  if (config.projects.length > 0) {
+    lines.push({ type: "blank" }, { type: "section", value: "BUILD.LOG" });
+    config.projects.slice(0, 4).forEach((project) => {
+      lines.push({ type: "row", key: project.name, value: project.heroLabel });
+    });
+  }
 
   lines.push({ type: "blank" }, { type: "section", value: "GRID.LINKS" });
   config.links.slice(0, 2).forEach((link) => {
@@ -225,7 +226,7 @@ function createHeroSvg(config, colors, size, portrait) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${layout.width}" height="${layout.height}" viewBox="0 0 ${layout.width} ${layout.height}" role="img" aria-labelledby="title description">
 <title id="title">${escapeXml(config.profile.name)} - ${escapeXml(config.profile.headline)}</title>
-<desc id="description">An animated profile console with an ASCII portrait, professional focus, featured projects, and public links.</desc>
+<desc id="description">An animated profile console with an ASCII portrait, professional focus, AI direction, and public links.</desc>
 <defs>
   <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${colors.backgroundStart}"/><stop offset="1" stop-color="${colors.backgroundEnd}"/></linearGradient>
   <linearGradient id="ascii-signal" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${colors.cyan}"><animate attributeName="stop-color" values="${colors.cyan};${colors.violet};${colors.blue};${colors.cyan}" dur="9s" repeatCount="indefinite"/></stop><stop offset="1" stop-color="${colors.violet}"><animate attributeName="stop-color" values="${colors.violet};${colors.blue};${colors.cyan};${colors.violet}" dur="9s" repeatCount="indefinite"/></stop></linearGradient>
@@ -258,7 +259,7 @@ ${isDesktop ? `<circle cx="${liveX}" cy="${titlebar.y + titlebar.height / 2}" r=
 <rect x="${visual.x}" y="${visual.y}" width="${visual.width}" height="${visual.height}" rx="${visual.radius}" fill="${colors.panel}" fill-opacity="0.38" stroke="url(#border)" stroke-opacity="0.42"/>
 <rect x="${info.x}" y="${info.y}" width="${info.width}" height="${info.height}" rx="${info.radius}" fill="${colors.panel}" fill-opacity="0.42" stroke="url(#border)" stroke-opacity="0.42"/>
 <text x="${layout.visualTitle.x}" y="${layout.visualTitle.y}" class="panel-title">VISUAL.MAP / PORTRAIT.SIGNAL</text>
-<text x="${layout.infoTitle.x}" y="${layout.infoTitle.y}" class="panel-title">SYSTEM.INFO / RESEARCH.BUILDER</text>
+<text x="${layout.infoTitle.x}" y="${layout.infoTitle.y}" class="panel-title">SYSTEM.INFO / AI.ENGINEER.PATH</text>
 ${ambientPortrait}
 <g clip-path="url(#portrait-clip)" mask="url(#portrait-reveal)"><text class="ascii">${ascii}</text></g>
 ${system.rows}

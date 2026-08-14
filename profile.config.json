@@ -1,69 +1,83 @@
 {
   "$schema": "./profile.schema.json",
   "profile": {
-    "name": "Your Name",
-    "username": "yourusername",
-    "headline": "AI Engineer & Product Builder",
-    "affiliation": "Your University or Company",
-    "location": "City, Country",
-    "status": "Learning / Building / Shipping",
+    "name": "Gumelar Akhirul Ramadhan",
+    "username": "gumelarakhirul",
+    "headline": "Full-Stack Developer & Aspiring AI Engineer",
+    "affiliation": "Politeknik Astra",
+    "location": "Bekasi, Indonesia",
+    "status": "Undergraduate Student",
     "about": [
-      "I build practical systems at the intersection of artificial intelligence, software engineering, and products people can trust.",
-      "My work combines technical exploration with a builder mindset: understand the problem, test the system, and share what actually works."
+      "I am an undergraduate student at Politeknik Astra with a strong interest in artificial intelligence, full-stack web development, and mobile application development.",
+      "I enjoy turning ideas into practical digital products while strengthening my foundations in software engineering, data, and intelligent systems. My long-term goal is to grow into an AI Engineer who builds reliable and useful technology."
     ]
   },
   "research": {
-    "primary": "AI Agents",
-    "direction": "Reliable autonomous systems",
-    "themes": "Tool use / evaluation / human control",
-    "narrative": "I am interested in systems that can observe state, use tools, evaluate outcomes, and take bounded actions with clear evidence and human oversight."
+    "primary": "Artificial Intelligence",
+    "direction": "Becoming an AI Engineer",
+    "themes": "AI / web systems / mobile applications",
+    "narrative": "I am developing strong full-stack and mobile engineering foundations while progressively exploring artificial intelligence. My direction is to connect reliable software engineering, structured data, and AI capabilities to create practical systems with real user value."
   },
   "focus": [
     {
-      "name": "AI Agents",
-      "description": "Autonomous workflows, tool use, evaluation, and reliable agent behavior."
+      "name": "Web Applications",
+      "description": "Building responsive full-stack products with maintainable interfaces, APIs, authentication, and data flows."
     },
     {
-      "name": "Applied AI",
-      "description": "Turning model capabilities into useful and testable software systems."
+      "name": "Mobile Applications",
+      "description": "Creating practical cross-platform mobile experiences with React Native and a product-focused approach."
     },
     {
-      "name": "Developer Tools",
-      "description": "Better workflows for building, testing, and operating modern software."
+      "name": "Artificial Intelligence",
+      "description": "Strengthening the data, programming, and software foundations required to grow into an AI Engineer."
     }
   ],
-  "projects": [
-    {
-      "name": "Project One",
-      "url": "https://github.com/yourusername/project-one",
-      "homepage": "",
-      "focus": "Primary project focus",
-      "summary": "A concise explanation of what the project does and why it matters.",
-      "heroLabel": "Primary build"
-    },
-    {
-      "name": "Project Two",
-      "url": "https://github.com/yourusername/project-two",
-      "homepage": "",
-      "focus": "Secondary project focus",
-      "summary": "A second project that supports the professional direction of this profile.",
-      "heroLabel": "Active system"
-    }
-  ],
+  "projects": [],
   "techStack": [
     "TypeScript",
+    "JavaScript",
+    "SQL",
+    "React",
+    "React Native",
     "Next.js",
-    "Python",
+    "Tailwind CSS",
+    "Node.js",
+    "NextAuth",
+    "Prisma",
     "PostgreSQL",
-    "Playwright"
+    "SQL Server",
+    "Git",
+    "GitHub Actions",
+    "Automation"
   ],
   "links": [
     {
       "label": "GitHub",
-      "value": "yourusername",
-      "url": "https://github.com/yourusername",
+      "value": "gumelarakhirul",
+      "url": "https://github.com/gumelarakhirul",
       "logo": "github",
       "color": "0B1220"
+    },
+    {
+      "label": "LinkedIn",
+      "value": "gumelarakhirulramadhan",
+      "url": "https://www.linkedin.com/in/gumelarakhirulramadhan",
+      "logo": "linkedin",
+      "color": "0A66C2"
+    },
+    {
+      "label": "Instagram",
+      "value": "@gumelarakhirul",
+      "url": "https://www.instagram.com/gumelarakhirul",
+      "logo": "instagram",
+      "color": "E4405F"
+    },
+    {
+      "label": "Email",
+      "value": "gumelarakhirul@gmail.com",
+      "url": "mailto:gumelarakhirul@gmail.com",
+      "logo": "gmail",
+      "color": "EA4335"
     }
   ],
   "activity": {
@@ -71,7 +85,7 @@
     "limit": 6
   },
   "appearance": {
-    "palette": "signal"
+    "palette": "ocean"
   },
-  "footer": "Building thoughtful systems and sharing what works."
+  "footer": "Learning deeply, building consistently, and growing toward intelligent systems."
 }
