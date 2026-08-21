@@ -89,12 +89,12 @@ I am developing strong full-stack and mobile engineering foundations while progr
 ## Recent Activity
 
 <!-- AUTO:ACTIVITY:START -->
+- Aug 20, 2026: pushed 1 commit to [gumelarakhirul/talenthub](https://github.com/gumelarakhirul/talenthub).
 - Aug 14, 2026: pushed 1 commit to [gumelarakhirul/gumelarakhirul](https://github.com/gumelarakhirul/gumelarakhirul).
 - Aug 14, 2026: created a branch in [gumelarakhirul/gumelarakhirul](https://github.com/gumelarakhirul/gumelarakhirul).
 - Aug 13, 2026: pushed 1 commit to [gumelarakhirul/talenthub](https://github.com/gumelarakhirul/talenthub).
 - Aug 10, 2026: pushed 1 commit to [gumelarakhirul/talenthub](https://github.com/gumelarakhirul/talenthub).
 - Aug 9, 2026: pushed 1 commit to [gumelarakhirul/talenthub](https://github.com/gumelarakhirul/talenthub).
-- Aug 9, 2026: pushed 1 commit to [EdwinJ99/talenthub](https://github.com/EdwinJ99/talenthub).
 <!-- AUTO:ACTIVITY:END -->
 
 ## Contribution Activity
